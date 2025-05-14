@@ -3,6 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="revolut.MainPage">
 
-    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="275"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <VerticalStackLayout HorizontalOptions="End" Grid.Column="0" Grid.Row="0">
+            <Label Text="Total balance"/>
+            <Label Text="$231.68" FontAttributes="Bold" FontSize="40" />
+        </VerticalStackLayout>
+
+        <Image Source="dzwon.png"  WidthRequest="50" Grid.Column="1" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+    </Grid>
 
 </ContentPage>
